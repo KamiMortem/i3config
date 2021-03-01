@@ -4,10 +4,10 @@
 
 #$( sleep 5 )
 
-$( i3-msg "workspace - Internet" )
+$( i3-msg "workspace 2: - Internet" )
 $( i3-msg "exec firefox")
 
-$( i3-msg "workspace   Terminal" )
+$( i3-msg "workspace 1:   Terminal" )
 
 #$( i3-msg exec lxterminal)
 #$( lxterminal )
