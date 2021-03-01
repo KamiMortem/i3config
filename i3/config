@@ -94,16 +94,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "  Terminal"
-set $ws2 "- Internet"
-set $ws3 "華 Trabajo"
-set $ws4 "  Teleg"
-set $ws5 "  Code"
-set $ws6 "  Mas"
-set $ws7 "  Diseño"
-set $ws8 "  Impr"
-set $ws9 "  Term"
-set $ws10 "嗢 Multimedia"
+set $ws1 "1:   Terminal"
+set $ws2 "2: - Internet"
+set $ws3 "3: 華 Trabajo"
+set $ws4 "4:   Teleg"
+set $ws5 "5:   Code"
+set $ws6 "6:   Mas"
+set $ws7 "7:   Diseño"
+set $ws8 "8:   Impr"
+set $ws9 "9:   Term"
+set $ws10 "10: 嗢 Multimedia"
 
 # eliguiendo to workspace
 bindsym $mod+1 workspace $ws1
