@@ -96,14 +96,14 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:   Terminal"
 set $ws2 "2: - Internet"
-set $ws3 "3: 華 Trabajo"
+set $ws3 "3: 華 Trab"
 set $ws4 "4:   Teleg"
 set $ws5 "5:   Code"
 set $ws6 "6:   Mas"
 set $ws7 "7:   Diseño"
 set $ws8 "8:   Impr"
 set $ws9 "9:   Term"
-set $ws10 "10: 嗢 Multimedia"
+set $ws10 "10 嗢 Multi"
 
 # eliguiendo to workspace
 bindsym $mod+1 workspace $ws1
@@ -196,10 +196,6 @@ hide_edge_borders smart
 # color de foco de ventana
 client.focused #17bf00 #17bf00 #17bf00 #7bff70
 
-# Fondo de pantalla
-#exec nitrogen --restore
-bindsym $mod+Shift+u exec /home/emilio/.config/i3/cambWallpapers.sh
-
 
 # Cambiar area de trabajo
 bindsym $mod+Tab workspace next
@@ -216,22 +212,27 @@ assign [class="code"] $ws5
 assign [class="gimp|Gimp"] $ws7
 assign [class="Vlc|vlc"] $ws10
 assign [class="Spotify|spotify"] $ws10
+assign [class="Steam|steam"] $ws10
+assign [class="evince|Evince"] $ws3
 
 # bordes no disponible aun...
 #smart_borders on
-bindsym $mod+Shift+b gaps inner all minus 2; gaps outer all minus 2;
-bindsym $mod+Shift+v gaps inner all plus 2; gaps outer all plus 2;
+bindsym $mod+Shift+m gaps inner all minus 2; gaps outer all minus 2;
+bindsym $mod+Shift+n gaps inner all plus 2; gaps outer all plus 2;
 
-# red
-#exec --no-startup-id nm-applet
-
+# Fondo de pantalla
+#exec nitrogen --restore
+bindsym $mod+Shift+u exec /home/emilio/.config/i3/cambWallpapers.sh
 
 # Comandos personalizados para programas
 bindsym $mod+Shift+f exec firefox
-bindsym $mod+Shift+g exec pcmanfm
+bindsym $mod+Shift+x exec pcmanfm
 bindsym $mod+Shift+z exec lxterminal -e ranger
+bindsym $mod+Shift+h exec lxterminal -e "ntpd -qg"
 bindsym $mod+Shift+t exec telegram-desktop
-bindsym $mod+Shift+h exec ntpd -qg
+bindsym $mod+Shift+i exec inkscape
+bindsym $mod+Shift+g exec gimp
+bindsym $mod+Shift+b exec blender
 
 
 bindsym $mod+Shift+p exec /home/emilio/.config/i3/iniciarPC.sh
@@ -242,6 +243,9 @@ bindsym $mod+Print exec \
         jq 'recurse(.nodes[]) | select(.focused).window' \
     ) png:- | \
     xclip -selection clipboard -t image/png
+
+# red
+#exec --no-startup-id nm-applet
 
 # audio
 #bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+ 
@@ -262,8 +266,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # brillantor
 #bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
