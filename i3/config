@@ -205,15 +205,25 @@ bindsym $mod+Shift+Tab workspace prev
 for_window [class="^.*"] border pixel 2
 
 # Asignando aplicaciones a areas de trabajo
+assign [class="evince|Evince"] $ws3
+assign [class="LibreOffice|libreoffice"] $ws3
+assign [class="libreoffice|libreoffice-writer"] $ws3
+assign [class="libreoffice|libreoffice-calc"] $ws3
+assign [class="libreoffice|libreoffice-impress"] $ws3
 assign [class="telegram-desktop|TelegramDesktop"] $ws4
+assign [class="discord|Discord"] $ws4
 assign [class="eclipse|Eclipse"] $ws5
 assign [class="jetbrains-studio"] $ws5
 assign [class="code"] $ws5
+assign [class="virtualbox|VirtualBox"] $ws6
+assign [class="blender|Blender"] $ws6
 assign [class="gimp|Gimp"] $ws7
+assign [class="inkscape|Inkscape"] $ws7
+assign [class="krita|Krita"] $ws7
+assign [class="obs|OBS"] $ws9
 assign [class="Vlc|vlc"] $ws10
 assign [class="Spotify|spotify"] $ws10
 assign [class="Steam|steam"] $ws10
-assign [class="evince|Evince"] $ws3
 
 # bordes no disponible aun...
 #smart_borders on
@@ -226,9 +236,9 @@ bindsym $mod+Shift+u exec /home/emilio/.config/i3/cambWallpapers.sh
 
 # Comandos personalizados para programas
 bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+h exec firefox --private-window
 bindsym $mod+Shift+x exec pcmanfm
 bindsym $mod+Shift+z exec lxterminal -e ranger
-bindsym $mod+Shift+h exec lxterminal -e "ntpd -qg"
 bindsym $mod+Shift+t exec telegram-desktop
 bindsym $mod+Shift+i exec inkscape
 bindsym $mod+Shift+g exec gimp
