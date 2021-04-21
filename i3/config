@@ -245,6 +245,7 @@ bindsym $mod+Shift+i exec inkscape
 bindsym $mod+Shift+g exec gimp
 bindsym $mod+Shift+b exec blender
 
+# Comandos personalizados para programas programar
 bindsym $mod+c exec code
 bindsym $mod+i exec intellij-idea-ultimate-edition
 bindsym $mod+m exec eclipse
