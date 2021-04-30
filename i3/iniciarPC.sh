@@ -26,4 +26,5 @@ lxterminal -e "i3-msg move left;lxterminal -e bashtop"
 
 i3-msg "exec telegram-desktop"
 
-
+#EN PROYECTO	
+#i3-msg "workspace 2: - Internet"; i3-msg "firefox";

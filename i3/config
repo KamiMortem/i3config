@@ -206,10 +206,13 @@ for_window [class="^.*"] border pixel 2
 
 # Asignando aplicaciones a areas de trabajo
 assign [class="evince|Evince"] $ws3
+
 assign [class="LibreOffice|libreoffice"] $ws3
-assign [class="libreoffice|libreoffice-writer"] $ws3
-assign [class="libreoffice|libreoffice-calc"] $ws3
-assign [class="libreoffice|libreoffice-impress"] $ws3
+assign [class="Soffice"] $ws3
+assign [class="libreoffice-writer"] $ws3
+assign [class="libreoffice-calc"] $ws3
+assign [class="libreoffice-impress"] $ws3
+
 assign [class="telegram-desktop|TelegramDesktop"] $ws4
 assign [class="discord|Discord"] $ws4
 assign [class="eclipse|Eclipse"] $ws5
@@ -221,6 +224,7 @@ assign [class="blender|Blender"] $ws6
 assign [class="gimp|Gimp"] $ws7
 assign [class="inkscape|Inkscape"] $ws7
 assign [class="krita|Krita"] $ws7
+assign [class="draw.io|Draw.io"] $ws7
 assign [class="obs|OBS"] $ws9
 assign [class="Vlc|vlc"] $ws10
 assign [class="Spotify|spotify"] $ws10
