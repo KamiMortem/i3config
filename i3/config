@@ -97,13 +97,15 @@ bindsym $mod+a focus parent
 set $ws1 "1:   Terminal"
 set $ws2 "2: - Internet"
 set $ws3 "3: 華 Trab"
-set $ws4 "4:   Teleg"
-set $ws5 "5:   Code"
-set $ws6 "6:   Mas"
+set $ws4 "4:   Code"
+set $ws5 "5:   Mas"
+set $ws6 "6:   Edit"
 set $ws7 "7:   Diseño"
 set $ws8 "8:   Impr"
 set $ws9 "9:   Term"
-set $ws10 "10 嗢 Multi"
+set $ws10 "10:   Teleg"
+set $ws11 "11: ﭮ Disc"
+set $ws12 "12: 嗢 Multi"
 
 # eliguiendo to workspace
 bindsym $mod+1 workspace $ws1
@@ -115,7 +117,9 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
+bindsym $mod+F1 workspace $ws10
+bindsym $mod+F2 workspace $ws11
+bindsym $mod+0 workspace $ws12
 
 
 # Cambiar al anterior con doble pulsasion
@@ -131,7 +135,9 @@ bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10
+bindsym $mod+Shift+F1 move container to workspace $ws10
+bindsym $mod+Shift+F2 move container to workspace $ws11
+bindsym $mod+Shift+0 move container to workspace $ws12
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -213,22 +219,27 @@ assign [class="libreoffice-writer"] $ws3
 assign [class="libreoffice-calc"] $ws3
 assign [class="libreoffice-impress"] $ws3
 
-assign [class="telegram-desktop|TelegramDesktop"] $ws4
-assign [class="discord|Discord"] $ws4
-assign [class="eclipse|Eclipse"] $ws5
-assign [class="jetbrains-studio"] $ws5
-assign [class="jetbrains-idea|jetbrains-idea"] $ws5
-assign [class="code"] $ws5
-assign [class="virtualbox|VirtualBox"] $ws6
-assign [class="blender|Blender"] $ws6
+assign [class="telegram-desktop|TelegramDesktop"] $ws10
+assign [class="discord|Discord"] $ws11
+
+assign [class="eclipse|Eclipse"] $ws4
+assign [class="jetbrains-studio"] $ws4
+assign [class="jetbrains-idea|jetbrains-idea"] $ws4
+assign [class="code"] $ws4
+
+assign [class="virtualbox|VirtualBox"] $ws5
+
+assign [class="blender|Blender"] $ws5
+
 assign [class="gimp|Gimp"] $ws7
 assign [class="inkscape|Inkscape"] $ws7
 assign [class="krita|Krita"] $ws7
 assign [class="draw.io|Draw.io"] $ws7
-assign [class="obs|OBS"] $ws9
-assign [class="Vlc|vlc"] $ws10
-assign [class="Spotify|spotify"] $ws10
-assign [class="Steam|steam"] $ws10
+
+assign [class="obs|OBS"] $ws12
+assign [class="Vlc|vlc"] $ws12
+assign [class="Spotify|spotify"] $ws12
+assign [class="Steam|steam"] $ws12
 
 # bordes no disponible aun...
 #smart_borders on
