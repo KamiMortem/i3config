@@ -267,7 +267,7 @@ bindsym $mod+m exec eclipse
 bindsym $mod+n exec lxterminal -e vim notas.txt
 
 
-bindsym $mod+Shift+p exec /home/emilio/.config/i3/iniciarPC.sh
+bindsym $mod+Shift+p exec "/home/emilio/.config/i3/iniciarPC.sh"
 
 bindsym $mod+Print exec \
     import -window $( \
