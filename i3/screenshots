@@ -1,0 +1,13 @@
+#!/bin/bash
+
+case $1 in
+    a) # area
+        name=`date '+%Y-%m-%d-%H-%M-%S'.png` && maim -s $name && xclip -selection clipboard -t image/png $name
+        ;;
+    w) # window
+       name=`date '+%Y-%m-%d-%H-%M-%S'.png` && maim -m 1 -i $(xdotool getactivewindow) $name && xclip -selection clipboard -t image/png $name
+        ;;
+    f) # full desktop
+       name=`date '+%Y-%m-%d-%H-%M-%S'.png` && maim $name && xclip -selection clipboard -t image/png $name
+        ;;
+esac
