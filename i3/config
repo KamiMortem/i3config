@@ -104,7 +104,7 @@ set $ws7 "7:   Diseño"
 set $ws8 "8:   Impr"
 set $ws9 "9:   Term"
 set $ws10 "10:   Teleg"
-set $ws11 "11: ﭮ Disc"
+set $ws11 "11:   Disc"
 set $ws12 "12: 嗢 Multi"
 
 # eliguiendo to workspace
@@ -269,13 +269,9 @@ bindsym $mod+n exec lxterminal -e vim notas.txt
 
 bindsym $mod+Shift+p exec "/home/emilio/.config/i3/iniciarPC.sh"
 
-bindsym $mod+Print exec \
-    import -window $( \
-        i3-msg -t get_tree | \
-        jq 'recurse(.nodes[]) | select(.focused).window' \
-    ) png:- | \
-    xclip -selection clipboard -t image/png
-
+bindsym $mod+Print exec (name=`date '+%Y-%m-%d-%H-%M-%S'.png` && maim -s $name && xclip -selection clipboard -t image/png $name)
+bindsym Shift+Print exec name=`date '+%Y-%m-%d-%H-%M-%S'.png` && maim -m 1 -i $(xdotool getactivewindow) $name && xclip -selection clipboard -t image/png $name
+bindsym $mod+Shift+Print exec name=`date '+%Y-%m-%d-%H-%M-%S'.png` && maim $name && xclip -selection clipboard -t image/png $name
 # red
 #exec --no-startup-id nm-applet
 
