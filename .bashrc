@@ -12,6 +12,8 @@ alias ls='ls --color=auto'
 
 export PS1="\[\033[38;5;10m\][\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;2m\]\u\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;31m\]:\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;2m\]\W\[$(tput sgr0)\]\[\033[38;5;10m\]]{\[$(tput sgr0)\]\[\033[38;5;32m\]\\$\[$(tput sgr0)\]\[\033[38;5;10m\]}>\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
+
+
 export EDITOR=vim
 alias enccarpe='/home/emilio/gpg/enccarpe.sh'
 alias diaryLoqui='/home/emilio/gpg/diaryLoqui.sh'
@@ -21,3 +23,4 @@ alias iniciar='/home/emilio/.config/i3/ini.sh'
 alias screenshotsA='/home/emilio/.config/i3/screenshots a'
 alias screenshotsF='/home/emilio/.config/i3/screenshots f'
 alias screenshotsW='/home/emilio/.config/i3/screenshots w'
+alias clearcache='sudo pacman -Sc && yay -Sc'
