@@ -266,6 +266,8 @@ bindsym $mod+i exec intellij-idea-ultimate-edition
 bindsym $mod+m exec eclipse
 bindsym $mod+n exec lxterminal -e vim notas.txt
 
+# Comando abrir programas audio
+bindsym $mod+u exec pavucontrol
 
 bindsym $mod+Shift+p exec "/home/emilio/.config/i3/iniciarPC.sh"
 
@@ -294,8 +296,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
 # brillantor
 #bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
