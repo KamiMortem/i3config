@@ -259,6 +259,7 @@ bindsym $mod+Shift+t exec telegram-desktop
 bindsym $mod+Shift+i exec inkscape
 bindsym $mod+Shift+g exec gimp
 bindsym $mod+Shift+b exec blender
+bindsym $mod+t exec thunderbird
 
 # Comandos personalizados para programas programar
 bindsym $mod+c exec code
