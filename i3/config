@@ -250,6 +250,9 @@ bindsym $mod+Shift+n gaps inner all plus 2; gaps outer all plus 2;
 #exec nitrogen --restore
 bindsym $mod+Shift+u exec /home/emilio/.config/i3/cambWallpapers.sh
 
+# notificaciones
+bindsym $mod+z exec dunstctl history-pop
+
 # Comandos personalizados para programas
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+h exec firefox --private-window
