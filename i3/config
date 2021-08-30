@@ -106,6 +106,7 @@ set $ws9 "9:   Term"
 set $ws10 "10:   Teleg"
 set $ws11 "11:   Disc"
 set $ws12 "12: 嗢 Multi"
+set $ws13 "13:   Mail"
 
 # eliguiendo to workspace
 bindsym $mod+1 workspace $ws1
@@ -120,6 +121,7 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+F1 workspace $ws10
 bindsym $mod+F2 workspace $ws11
 bindsym $mod+0 workspace $ws12
+bindsym $mod+F3 workspace $ws13
 
 
 # Cambiar al anterior con doble pulsasion
@@ -138,6 +140,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+F1 move container to workspace $ws10
 bindsym $mod+Shift+F2 move container to workspace $ws11
 bindsym $mod+Shift+0 move container to workspace $ws12
+bindsym $mod+Shift+F3 move container to workspace $ws13
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -240,6 +243,10 @@ assign [class="obs|OBS"] $ws12
 assign [class="Vlc|vlc"] $ws12
 assign [class="Spotify|spotify"] $ws12
 assign [class="Steam|steam"] $ws12
+
+
+assign [class="thunderbird|Thunderbird"] $ws13
+assign [class="pavucontrol|Pavucontrol"] $ws13
 
 # bordes no disponible aun...
 #smart_borders on
