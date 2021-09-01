@@ -5,9 +5,9 @@
 
 ##$( sleep 1 )
 
-i3-msg "workspace 2: - Internet"
+i3-msg "workspace 2:  "
 i3-msg "exec firefox"
-i3-msg "workspace 1:   Terminal"
+i3-msg "workspace 1:  "
 
 ##$( i3-msg exec lxterminal)
 ##$( lxterminal )

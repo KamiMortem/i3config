@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -94,19 +95,20 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:   Terminal"
-set $ws2 "2: - Internet"
-set $ws3 "3: 華 Trab"
-set $ws4 "4:   Code"
-set $ws5 "5:   Mas"
-set $ws6 "6:   Edit"
-set $ws7 "7:   Diseño"
-set $ws8 "8:   Impr"
-set $ws9 "9:   Term"
-set $ws10 "10:   Teleg"
-set $ws11 "11:   Disc"
-set $ws12 "12: 嗢 Multi"
-set $ws13 "13:   Mail"
+set $ws1 "1:  "
+set $ws2 "2:  "
+set $ws3 "3: 華 "
+set $ws4 "4:  "
+set $ws5 "5:  "
+set $ws6 "6:  "
+set $ws7 "7:  "
+set $ws8 "8:  "
+set $ws9 "9:  "
+set $ws10 "10:  "
+set $ws11 "11:  "
+set $ws12 "12: 嗢 "
+set $ws13 "13:  "
+set $ws14 "14:  "
 
 # eliguiendo to workspace
 bindsym $mod+1 workspace $ws1
@@ -122,6 +124,7 @@ bindsym $mod+F1 workspace $ws10
 bindsym $mod+F2 workspace $ws11
 bindsym $mod+0 workspace $ws12
 bindsym $mod+F3 workspace $ws13
+bindsym $mod+F4 workspace $ws14
 
 
 # Cambiar al anterior con doble pulsasion
@@ -141,6 +144,7 @@ bindsym $mod+Shift+F1 move container to workspace $ws10
 bindsym $mod+Shift+F2 move container to workspace $ws11
 bindsym $mod+Shift+0 move container to workspace $ws12
 bindsym $mod+Shift+F3 move container to workspace $ws13
+bindsym $mod+Shift+F4 move container to workspace $ws14
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -218,11 +222,13 @@ assign [class="evince|Evince"] $ws3
 
 assign [class="LibreOffice|libreoffice"] $ws3
 assign [class="Soffice"] $ws3
+assign [class="wps|WPS"] $ws3
 assign [class="libreoffice-writer"] $ws3
 assign [class="libreoffice-calc"] $ws3
 assign [class="libreoffice-impress"] $ws3
 
 assign [class="telegram-desktop|TelegramDesktop"] $ws10
+
 assign [class="discord|Discord"] $ws11
 
 assign [class="eclipse|Eclipse"] $ws4
@@ -231,22 +237,29 @@ assign [class="jetbrains-idea|jetbrains-idea"] $ws4
 assign [class="code"] $ws4
 
 assign [class="virtualbox|VirtualBox"] $ws5
-
 assign [class="blender|Blender"] $ws5
+assign [class="google-chrome|Google-chrome"] $ws5
 
 assign [class="gimp|Gimp"] $ws7
 assign [class="inkscape|Inkscape"] $ws7
 assign [class="krita|Krita"] $ws7
-assign [class="draw.io|Draw.io"] $ws7
+
+assign [class="draw.io|Draw.io"] $ws6
+assign [class="PacketTracer|Packettracer"] $ws6
+assign [class="postman|Postman"] $ws6
+assign [class="modelio|Modelio"] $ws6
+assign [class="mongodb compass|MongoDB Compass"] $ws6
 
 assign [class="obs|OBS"] $ws12
 assign [class="Vlc|vlc"] $ws12
 assign [class="Spotify|spotify"] $ws12
-assign [class="Steam|steam"] $ws12
+
+assign [class="Steam|steam"] $ws14
 
 
 assign [class="thunderbird|Thunderbird"] $ws13
 assign [class="pavucontrol|Pavucontrol"] $ws13
+assign [class="notion|Notion"] $ws13
 
 # bordes no disponible aun...
 #smart_borders on
@@ -270,6 +283,8 @@ bindsym $mod+Shift+i exec inkscape
 bindsym $mod+Shift+g exec gimp
 bindsym $mod+Shift+b exec blender
 bindsym $mod+t exec thunderbird
+bindsym $mod+$alt+n exec notion-app
+bindsym $mod+$alt+l exec libreoffice
 
 # Comandos personalizados para programas programar
 bindsym $mod+c exec code
