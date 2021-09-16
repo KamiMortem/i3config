@@ -327,7 +327,12 @@
 #    urgency = normal
 #
 # vim: ft=cfg
-[thunderbird]
-    appname = thunderbird
-    summary = *
-    urgency = low
+#
+#[thunderbird]
+#    appname = Thunderbird
+#    urgency = low
+#
+[telegram]
+    appname = Telegram
+    summary = "*Kami*"
+    urgency = critical

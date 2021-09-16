@@ -252,7 +252,7 @@ assign [class="mongodb compass|MongoDB Compass"] $ws6
 
 assign [class="obs|OBS"] $ws12
 assign [class="Vlc|vlc"] $ws12
-assign [class="Spotify|spotify"] $ws12
+assign [class="spotify|Spotify"] $ws12
 
 assign [class="Steam|steam"] $ws14
 
@@ -260,6 +260,7 @@ assign [class="Steam|steam"] $ws14
 assign [class="thunderbird|Thunderbird"] $ws13
 assign [class="pavucontrol|Pavucontrol"] $ws13
 assign [class="notion|Notion"] $ws13
+assign [class="anki|Anki"] $ws13
 
 # bordes no disponible aun...
 #smart_borders on
@@ -284,6 +285,7 @@ bindsym $mod+Shift+g exec gimp
 bindsym $mod+Shift+b exec blender
 bindsym $mod+t exec thunderbird
 bindsym $mod+$alt+n exec notion-app
+bindsym $mod+$alt+a exec anki
 bindsym $mod+$alt+l exec libreoffice
 
 # Comandos personalizados para programas programar
