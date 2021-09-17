@@ -339,4 +339,5 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 
 exec setxkbmap latam
 exec picom
+exec systemctl start --user dunst
 exec /home/emilio/.config/i3/cambWallpapers.sh

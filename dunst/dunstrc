@@ -328,11 +328,3 @@
 #
 # vim: ft=cfg
 #
-#[thunderbird]
-#    appname = Thunderbird
-#    urgency = low
-#
-[telegram]
-    appname = Telegram
-    summary = "*Kami*"
-    urgency = critical
