@@ -19,5 +19,5 @@ lxterminal -e "i3-msg move up;sudo ntpd -qg;echo ;cal;curl -s wttr.in | head -n 
 lxterminal -e "i3-msg move left;lxterminal -e bashtop"
 
 i3-msg "exec telegram-desktop"
-
+i3-msg "exec notion-app"
 
