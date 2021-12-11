@@ -21,3 +21,5 @@ lxterminal -e "i3-msg move left;lxterminal -e bashtop"
 i3-msg "exec telegram-desktop"
 i3-msg "exec notion-app"
 
+i3-msg "exec source bashrc"
+
