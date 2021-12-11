@@ -36,6 +36,7 @@ alias screenshotsF='/home/emilio/.config/i3/screenshots f'
 alias screenshotsW='/home/emilio/.config/i3/screenshots w'
 alias clearcache='sudo pacman -Sc && yay -Sc'
 alias e='exit'
+alias h='hstr'
 
 # Iniciar terminal
 
