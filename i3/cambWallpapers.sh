@@ -1,4 +1,4 @@
-directorio=~/FondosPantalla
+directorio=/home/emilio/gitClone/i3config/FondosPantalla
 function mi_resolucion(){
 res=`xrandr | grep '*' | grep -o -E '[0-9]+x[0-9]+'`
 mi_alto=`echo "$res" | cut -d "x" -f 2`
