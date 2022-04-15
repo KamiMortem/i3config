@@ -43,7 +43,7 @@ bindsym $mod+Return exec lxterminal
 bindsym $mod+Shift+q kill
 
 # start dmenu
-bindsym $mod+x exec dmenu_run -nb "#334641" -nf "#6fff18" -sb "#0b3a10" -sf "#FFFFFF" 
+bindsym $mod+x exec dmenu_run -nb "#334641" -nf "#6fff18" -sb "#0b3a10" -sf "#FFFFFF" -i -p "Programa: " 
 
 # start rofi 
 bindsym $mod+d exec rofi -show run
@@ -77,6 +77,9 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# cambiar espacio de trabajo de pantalla
+bindsym $mod+y move workspace to output next
 
 # split in horizontal orientation
 bindsym $mod+h split h
