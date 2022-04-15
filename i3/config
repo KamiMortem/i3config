@@ -238,10 +238,6 @@ assign [class="libreoffice-writer"] $ws3
 assign [class="libreoffice-calc"] $ws3
 assign [class="libreoffice-impress"] $ws3
 
-assign [class="telegram-desktop|TelegramDesktop"] $ws10
-
-assign [class="discord|Discord"] $ws11
-
 assign [class="eclipse|Eclipse"] $ws4
 assign [class="jetbrains-studio"] $ws4
 assign [class="jetbrains-idea|jetbrains-idea"] $ws4
@@ -251,32 +247,38 @@ assign [class="virtualbox|VirtualBox"] $ws5
 assign [class="blender|Blender"] $ws5
 assign [class="google-chrome|Google-chrome"] $ws5
 
-assign [class="gimp|Gimp"] $ws7
-assign [class="inkscape|Inkscape"] $ws7
-assign [class="krita|Krita"] $ws7
-
 assign [class="draw.io|Draw.io"] $ws6
 assign [class="PacketTracer|Packettracer"] $ws6
 assign [class="postman|Postman"] $ws6
 assign [class="modelio|Modelio"] $ws6
 assign [class="mongodb compass|MongoDB Compass"] $ws6
 
+assign [class="gimp|Gimp"] $ws7
+assign [class="inkscape|Inkscape"] $ws7
+assign [class="krita|Krita"] $ws7
+
+assign [class="telegram-desktop|TelegramDesktop"] $ws10
+
+assign [class="discord|Discord"] $ws11
+
 assign [class="obs|OBS"] $ws12
 assign [class="Vlc|vlc"] $ws12
 assign [class="spotify|Spotify"] $ws12
-
-assign [class="Steam|steam"] $ws14
-
 
 assign [class="thunderbird|Thunderbird"] $ws13
 assign [class="pavucontrol|Pavucontrol"] $ws13
 assign [class="notion|Notion"] $ws13
 assign [class="anki|Anki"] $ws13
 
-# bordes no disponible aun...
-#smart_borders on
+assign [class="Steam|steam"] $ws14
+
+# bordes de venntanas y gaps
+smart_borders on
+smart_gaps on
 bindsym $mod+Shift+m gaps inner all minus 2; gaps outer all minus 2;
 bindsym $mod+Shift+n gaps inner all plus 2; gaps outer all plus 2;
+gaps outer 1
+gaps inner 2
 
 # Fondo de pantalla
 #exec nitrogen --restore
@@ -329,13 +331,13 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 
-# Music song controls
+# Musica y sonidos
 bindsym XF86AudioPlay exec play_pause
 bindsym XF86AudioPause exec play_pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# Sreen brightness controls
+# Sreen brightness controls - brillo
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
