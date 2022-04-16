@@ -80,6 +80,13 @@ ZSH_THEME="robbyrussell"
 plugins=(
 	git
 	zsh-navigation-tools
+	zsh-autosuggestions
+	web-search
+	copypath
+	copyfile
+	dirhistory
+	zsh-syntax-highlighting
+	sudo
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -128,8 +135,8 @@ alias screenshotsA='/home/emilio/.config/i3/screenshots a'
 alias screenshotsF='/home/emilio/.config/i3/screenshots f'
 alias screenshotsW='/home/emilio/.config/i3/screenshots w'
 alias clearcache='sudo pacman -Sc && yay -Sc'
-alias furd="/mnt/D0FC9AAEFC9A8DFA/Proyectos/furd/Furd.out"
-alias f="/mnt/D0FC9AAEFC9A8DFA/Proyectos/furd/Furd.out"
+alias furd="/mnt/imp/Proyectos/furd/Furd.out"
+alias f="/mnt/imp/Proyectos/furd/Furd.out"
 alias e="exit"
 alias c="clear"
 alias h='hstr'
