@@ -182,3 +182,4 @@ if [ "$opIniciar" = "1" ]; then
 fi
 
 
+source /usr/share/nvm/init-nvm.sh
