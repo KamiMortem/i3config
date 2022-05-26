@@ -256,33 +256,33 @@ bindsym $mod+Shift+Tab workspace prev
 for_window [class="^.*"] border pixel 2
 
 # Asignando aplicaciones a areas de trabajo
-assign [class="evince|Evince"] $ws3
+assign [class="evince|Evince"] $ws5
 
-assign [class="LibreOffice|libreoffice"] $ws3
-assign [class="Soffice"] $ws3
-assign [class="wps|WPS"] $ws3
-assign [class="libreoffice-writer"] $ws3
-assign [class="libreoffice-calc"] $ws3
-assign [class="libreoffice-impress"] $ws3
+assign [class="LibreOffice|libreoffice"] $ws6
+assign [class="Soffice"] $ws6
+assign [class="wps|WPS"] $ws6
+assign [class="libreoffice-writer"] $ws6
+assign [class="libreoffice-calc"] $ws6
+assign [class="libreoffice-impress"] $ws6
 
 assign [class="eclipse|Eclipse"] $ws4
 assign [class="jetbrains-studio"] $ws4
 assign [class="jetbrains-idea|jetbrains-idea"] $ws4
 assign [class="code"] $ws4
 
-assign [class="virtualbox|VirtualBox"] $ws5
-assign [class="blender|Blender"] $ws5
-assign [class="google-chrome|Google-chrome"] $ws5
+assign [class="virtualbox|VirtualBox"] $ws8
+assign [class="blender|Blender"] $ws8
+assign [class="google-chrome|Google-chrome"] $ws8
 
-assign [class="draw.io|Draw.io"] $ws6
-assign [class="PacketTracer|Packettracer"] $ws6
-assign [class="postman|Postman"] $ws6
-assign [class="modelio|Modelio"] $ws6
-assign [class="mongodb compass|MongoDB Compass"] $ws6
+assign [class="draw.io|Draw.io"] $ws7
+assign [class="PacketTracer|Packettracer"] $ws7
+assign [class="postman|Postman"] $ws7
+assign [class="modelio|Modelio"] $ws7
+assign [class="mongodb compass|MongoDB Compass"] $ws7
 
-assign [class="gimp|Gimp"] $ws7
-assign [class="inkscape|Inkscape"] $ws7
-assign [class="krita|Krita"] $ws7
+assign [class="gimp|Gimp"] $ws8
+assign [class="inkscape|Inkscape"] $ws8
+assign [class="krita|Krita"] $ws8
 
 assign [class="telegram-desktop|TelegramDesktop"] $ws10
 
