@@ -269,6 +269,7 @@ assign [class="eclipse|Eclipse"] $ws4
 assign [class="jetbrains-studio"] $ws4
 assign [class="jetbrains-idea|jetbrains-idea"] $ws4
 assign [class="code"] $ws4
+assign [class="SpringToolSuite4|SpringToolSuite4"] $ws4
 
 assign [class="virtualbox|VirtualBox"] $ws8
 assign [class="blender|Blender"] $ws8
@@ -277,6 +278,7 @@ assign [class="google-chrome|Google-chrome"] $ws8
 assign [class="draw.io|Draw.io"] $ws7
 assign [class="PacketTracer|Packettracer"] $ws7
 assign [class="postman|Postman"] $ws7
+assign [class="mysql-workbench-bin|Mysql-workbench-bin"] $ws7
 assign [class="modelio|Modelio"] $ws7
 assign [class="mongodb compass|MongoDB Compass"] $ws7
 
@@ -332,6 +334,7 @@ bindsym $mod+$alt+l exec libreoffice
 bindsym $mod+c exec code
 bindsym $mod+i exec intellij-idea-ultimate-edition
 bindsym $mod+m exec eclipse
+bindsym $mod+$alt+m exec STS
 bindsym $mod+n exec lxterminal -e vim notas.txt 
 bindsym $mod+g exec gitahead
 
